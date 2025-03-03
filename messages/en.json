@@ -1,0 +1,39 @@
+{
+    "locale": "en",
+    "name": "English",
+    "direction": "ltr",
+    "common": {
+        "welcome": "Welcome to our application",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "save": "Save",
+        "cancel": "Cancel"
+    },
+    "navigation": {
+        "experience": "experience",
+        "projects": "projects",
+        "services": "services",
+        "blog": "blog",
+        "contact": "contact"
+    },
+    "landing": {
+        "hello":"Hello, I am",
+        "title1":"Mohammed Al-kurdi",
+        "title2":"a Software Engineer",
+        "title3":"an Application Developer"
+    },
+    "homepage": {
+        "hero_title": "Your Next-Level Application",
+        "hero_subtitle": "Building the future with Next.js and MongoDB",
+        "get_started": "Get Started",
+        "learn_more": "Learn More"
+    },
+    "contact_form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Submit",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
+    }
+}

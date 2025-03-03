@@ -1,0 +1,55 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --darkest: #1D1616;
+  --dark: #8E1616;
+  --light: #BE8282;
+  --lightest: #EEEEEE;
+  --content_color: #EEEEEE;
+  --bg_color: #1D1616;
+  --nav_bg: #8E1616;
+}
+
+[data-theme="light"] {
+  --darkest: #253237;
+  --dark: #5C7285;
+  --light: #A7B49E;
+  --lightest: #E2E0C8;
+  --content_color: #253237;
+  --bg_color: #E2E0C8;
+  --nav_bg: #253237;
+
+}
+
+/* You can keep your media query for initial theme based on system preference */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --darkest: #253237;
+    --dark: #5C7285;
+    --light: #A7B49E;
+    --lightest: #E2E0C8;
+    --content_color: #253237;
+    --bg_color: #5C7285;
+    --nav_bg: #253237;
+  }
+}
+
+a {
+  text-transform: capitalize;
+}
+
+
+body {
+  color: var(--content_color);
+  background: var(--bg_color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom_nav {
+  /* background: linear-gradient(to bottom, var(--nav_bg), rgba(29, 22, 22, 0)); */
+  /* background-color: var(--nav_bg); */
+  color: var(--lightest)
+}

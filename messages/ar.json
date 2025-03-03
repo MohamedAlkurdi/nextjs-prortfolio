@@ -1,0 +1,39 @@
+{
+    "locale": "ar",
+    "name": "العربية",
+    "direction": "rtl",
+    "common": {
+        "welcome": "مرحبًا بكم في تطبيقنا",
+        "loading": "جار التحميل...",
+        "error": "حدث خطأ",
+        "save": "حفظ",
+        "cancel": "إلغاء"
+    },
+    "navigation": {
+        "experience": "خبرتي",
+        "projects": "مشاريعي",
+        "services": "خدماتنا",
+        "blog": "مدونتي",
+        "contact": "تواصل معي"
+    },
+    "landing": {
+        "hello":"مرحبا، أنا",
+        "title1":"محمد الكردي",
+        "title2":"مهندس برمجيات",
+        "title3":"مطور تطبيقات"
+    },
+    "homepage": {
+        "hero_title": "تطبيقك من المستوى التالي",
+        "hero_subtitle": "بناء المستقبل مع Next.js و MongoDB",
+        "get_started": "ابدأ الآن",
+        "learn_more": "اعرف المزيد"
+    },
+    "contact_form": {
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "message": "الرسالة",
+        "submit": "إرسال",
+        "success": "تم إرسال الرسالة بنجاح!",
+        "error": "فشل في إرسال الرسالة. يرجى المحاولة مرة أخرى."
+    }
+}
