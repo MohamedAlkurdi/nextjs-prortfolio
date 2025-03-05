@@ -5,11 +5,13 @@ import Link from 'next/link'
 import ThemeToggle from './ToggleTheme'
 import ToggleLang from './toggleLang'
 import * as motion from 'motion/react-client'
-import { useTranslations } from "next-intl"
+import useTranslation from '@/app/lib/useTranslation'
+import { useLocale } from '@/app/lib/i18n_context'
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
-    const t = useTranslations("navigation")
+    const locale = useLocale()
+    const translation = useTranslation(locale)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -68,11 +70,11 @@ export default function Navbar() {
             className="flex flex-row items-center justify-center z-50 ltr"
         >
             <div className='flex justify-between items-center gap-5'>
-                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={'/'}>{t("experience")}</Link>
-                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={'/'}>{t("projects")}</Link>
-                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={'/'}>{t("services")}</Link>
-                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={'/'}>{t("blog")}</Link>
-                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={'/'}>{t("contact")}</Link>
+                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={`/${locale}`}>{translation.navigation.experience}</Link>
+                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={`/${locale}`}>{translation.navigation.projects}</Link>
+                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={`/${locale}`}>{translation.navigation.services}</Link>
+                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={`/${locale}`}>{translation.navigation.blog}</Link>
+                <Link className="text-xl px-2 py-1 rounded hover:bg-light duration-150 hover:text-darkest" href={`/${locale}`}>{translation.navigation.contact}</Link>
                 <div className='flex flex-row gap-5 items-center'>
                     <ThemeToggle />
                     <ToggleLang />

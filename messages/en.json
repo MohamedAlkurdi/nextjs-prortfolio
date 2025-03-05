@@ -16,7 +16,7 @@
         "blog": "blog",
         "contact": "contact"
     },
-    "landing": {
+    "typewrite_content": {
         "hello":"Hello, I am",
         "title1":"Mohammed Al-kurdi",
         "title2":"a Software Engineer",

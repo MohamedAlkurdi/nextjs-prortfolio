@@ -1,13 +1,12 @@
 'use client'
-
-import { useRouter } from "../i18n/navigation"
+import { redirect } from "next/navigation"
 
 export default function ToggleLang() {
-    const router = useRouter()
 
     const handleLanguageChange = (event) => {
         const locale = event.target.value
-        router.push('/', { locale: locale })
+        console.log(locale)
+        redirect(`/${locale}`)
     }
 
     return (

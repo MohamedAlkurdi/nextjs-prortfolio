@@ -1,4 +1,3 @@
-import React from "react";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 
@@ -13,6 +12,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    return children;
+    return (
+        <html className={rubik.variable}>
+            <body>
+                <div className="h-10" />
+                {children}
+            </body>
+        </html>
+    )
 }
 
