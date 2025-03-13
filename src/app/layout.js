@@ -2,8 +2,10 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 
 const rubik = Rubik({
-    variable: "--font-rubik-sans",
-    subsets: ['latin']
+    subsets: ['latin'],
+    display: 'swap',
+    weight: ['300', '400', '500', '600', '700'],
+    variable: '--font-rubik'
 });
 
 export const metadata = {
@@ -13,9 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html className={rubik.variable}>
-            <body>
-                <div className="h-10" />
+        <html lang="en" className={`${rubik.variable}`}>
+            <body className={`font-sans`}>
                 {children}
             </body>
         </html>

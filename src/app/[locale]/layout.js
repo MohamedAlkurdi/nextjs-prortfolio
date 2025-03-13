@@ -7,7 +7,7 @@ export default async function LocaleLayout({ children, params }) {
     const locale = await handleLocale(params)
     return (
         <LocaleProvider locale={locale}>
-            <div className={`${locale === 'en' ? 'ltr' : 'rtl'}`}>
+            <div className={`${locale === 'en' ? `ltr` : 'rtl'}`}>
                 <Navbar />
                 <Landing />
                 {children}
